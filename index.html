@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guia Rápido de Emagrecimento</title>
+  <meta name="description" content="Receba um guia rápido com 3 passos para começar a queimar gordura de forma natural. 100% gratuito.">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- =======================
+       META PIXEL (cole seu ID)
+       ======================= -->
+  <!-- Substitua SEU_PIXEL_ID pelo seu -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <!-- =======================
+       GOOGLE ANALYTICS 4
+       ======================= -->
+  <!-- Substitua G-XXXXXXXXXX pelo seu -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Ajustes leves de sombra/gradiente (opcional) -->
+  <style>
+    .card-shadow { box-shadow: 0 20px 40px rgba(0,0,0,.08); }
+    .btn-gradient { background: linear-gradient(180deg,#d64545,#b82f2f); }
+    .btn-gradient:hover { filter: brightness(1.05); }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen">
+
+  <main class="max-w-5xl mx-auto px-4 py-10 md:py-16">
+    <section class="bg-white rounded-2xl card-shadow p-6 md:p-10">
+      <!-- Topo: logo (opcional) -->
+      <div class="flex justify-center mb-6">
+        <!-- Troque o src pela sua logo (coloque a imagem no repositório ou use um link externo) -->
+        <img src="https://via.placeholder.com/120x40?text=Logo" alt="Logo" class="h-10 object-contain rounded-full">
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+        <!-- Texto + formulário -->
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
+            Descubra como mulheres comuns estão emagrecendo sem passar fome
+          </h1>
+
+          <p class="text-lg md:text-xl text-gray-700 mb-6">
+            Receba um guia rápido com <strong>3 passos</strong> para começar a queimar gordura de forma natural.
+          </p>
+
+          <!-- ===== Formulário =====
+               Opção 1: enviar para Google Forms / Formspree (troque o action)
+               Opção 2: capturar e mandar para WhatsApp/Email via JS (exemplo abaixo)
+          -->
+          <form id="lead-form" class="space-y-3" action="" method="POST">
+            <label for="contato" class="sr-only">Seu e-mail ou telefone</label>
+            <input
+              id="contato"
+              name="contato"
+              type="text"
+              required
+              placeholder="Seu e-mail ou telefone"
+              class="w-full rounded-xl border border-gray-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-red-400 focus:border-red-400"
+            />
+
+            <button
+              id="cta"
+              type="submit"
+              class="w-full md:w-auto btn-gradient text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition"
+            >
+              Quero receber agora
+            </button>
+
+            <p class="text-sm text-gray-500">100% gratuito • Sem spam</p>
+          </form>
+        </div>
+
+        <!-- Imagem lateral -->
+        <div class="flex justify-center md:justify-end">
+          <!-- Use uma foto sua (sem direitos) ou banco gratuito; substitua o src -->
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=crop"
+            alt="Mulher sorrindo representando bem-estar"
+            class="w-full max-w-md rounded-2xl"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Benefícios -->
+      <div class="mt-8 md:mt-10 grid gap-3 text-base md:text-lg">
+        <div class="flex items-start gap-3">
+          <span class="mt-1 inline-block h-2 w-2 rounded-full bg-red-500"></span>
+          <p>Dicas práticas para queimar gordura.</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mt-1 inline-block h-2 w-2 rounded-full bg-red-500"></span>
+          <p>Alimentos que aceleram o metabolismo.</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mt-1 inline-block h-2 w-2 rounded-full bg-red-500"></span>
+          <p>Rotina emagrecedora simples de seguir.</p>
+        </div>
+      </div>
+
+      <!-- Prova social + CTA repetido -->
+      <div class="mt-8 md:mt-10">
+        <p class="text-gray-700 mb-4">
+          <strong>+1.200 pessoas</strong> já baixaram esse guia e começaram sua jornada de emagrecimento.
+        </p>
+
+        <a href="#lead-form"
+           class="inline-block btn-gradient text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition">
+          Quero receber o guia gratuito
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== JS simples =====
+       Por padrão, este JS só mostra um alerta e dispara eventos.
+       ► Para enviar para WhatsApp: troque WHATSAPP_NUMERO.
+       ► Para usar Google Forms/Formspree: remova o JS e defina o action do <form>.
+  -->
+  <script>
+    // Dispara evento do Pixel ao enviar o form
+    function trackLead() {
+      try {
+        fbq('track', 'Lead');
+      } catch (e) { /* ignore */ }
+    }
+
+    // Exemplo: redirecionar para WhatsApp com o contato preenchido
+    // Substitua pelo seu número no formato 55DDDNUMERO (sem +, espaços ou traços)
+    const WHATSAPP_NUMERO = '5599999999999'; // <-- TROCAR
+    const form = document.getElementById('lead-form');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const contato = (document.getElementById('contato').value || '').trim();
+
+      // TODO: aqui você pode salvar em um Google Sheet / Formspree antes de redirecionar.
+
+      trackLead();
+
+      // Redireciona para WhatsApp com a mensagem
+      const msg = encodeURIComponent(`Olá! Quero receber o guia gratuito. Meu contato: ${contato}`);
+      const url = `https://wa.me/${WHATSAPP_NUMERO}?text=${msg}`;
+      window.location.href = url;
+    });
+  </script>
+</body>
+</html>
